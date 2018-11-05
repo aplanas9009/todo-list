@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Task} from './model/task';
+import { TASKS } from './model/mock-tasks';
 
 @Component({
   selector: 'app-tasks',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TasksComponent implements OnInit {
 
+  tasks = TASKS;
+  selectedTask: Task;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSelectTask(task: Task): void {
+    this.selectedTask = task;
   }
 
 }
