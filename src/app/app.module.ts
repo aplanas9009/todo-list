@@ -5,11 +5,13 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TasksComponent } from './tasks/tasks.component';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TasksComponent
+    TasksComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
