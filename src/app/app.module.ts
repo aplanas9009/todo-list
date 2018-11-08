@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { TasksComponent } from './tasks/tasks.component';
 import { MessagesComponent } from './messages/messages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { TaskDetailsComponent } from './task-details/task-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TasksComponent,
     MessagesComponent,
-    DashboardComponent
+    DashboardComponent,
+    TaskDetailsComponent
   ],
   imports: [
     BrowserModule,

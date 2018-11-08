@@ -1,7 +1,10 @@
 <h2>My Tasks</h2>
-<ul class="heroes">
+<ul class="task">
   <li *ngFor="let task of tasks" [class.selected]="task === selectedTask" (click)="onSelectTask(task)">
-    <span class="badge">{{ task.id }}</span> {{ task.name }}
+    <a routerLink="/detail/{{task.id}}">
+      <span class="badge">{{ task.id }}</span> {{ task.name }}
+    </a>
+
   </li>
 </ul>
 

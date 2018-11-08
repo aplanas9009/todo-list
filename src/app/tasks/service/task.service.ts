@@ -16,4 +16,9 @@ export class TaskService {
     this.messageService.add('HeroService: fetched heroes');
     return of(TASKS);
   }
+
+  getTaskById(id: number): Observable<Task> {
+    this.messageService.add(`HeroService: fetched hero id=${id}`);
+    return of(TASKS.find( task => task.id === id));
+  }
 }
